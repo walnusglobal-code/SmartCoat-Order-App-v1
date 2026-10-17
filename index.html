@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walnus Global Ventures - Coatings. Construction. Intelligence.</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-surface: #ffffff;
+            --color-surface-muted: #f9fafb;
+            --color-surface-elevated: #ffffff;
+            --color-text-primary: #111827;
+            --color-text-secondary: #4b5563;
+            --color-text-muted: #9ca3af;
+            --color-border: #e5e7eb;
+            --color-accent: #0f172a;
+            --color-accent-hover: #334155;
+            
+            --font-display: 'Inter', system-ui, sans-serif;
+            --font-body: 'Inter', system-ui, sans-serif;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text-primary);
+            background-color: var(--color-surface);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6, .display {
+            font-family: var(--font-display);
+            letter-spacing: -0.02em;
+        }
+
+        .btn {
+            @apply inline-flex items-center justify-center px-6 py-3 rounded-md font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+        }
+        .btn-primary {
+            @apply bg-accent text-white hover:bg-accent-hover focus:ring-accent;
+        }
+        .btn-secondary {
+            @apply bg-white text-accent border border-gray-200 hover:bg-gray-50 focus:ring-gray-200 shadow-sm;
+        }
+        .btn-tertiary {
+            @apply text-accent hover:text-accent-hover hover:underline underline-offset-4 bg-transparent px-0 py-0;
+        }
+
+        .section-padding {
+            @apply py-24 md:py-32;
+        }
+
+        .container-custom {
+            @apply max-w-7xl mx-auto px-6 md:px-12;
+        }
+
+        .nav-scrolled {
+            @apply bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 text-gray-900;
+        }
+        
+        .nav-transparent {
+            @apply bg-transparent text-white border-b border-white/10;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%);
+        }
+        
+        .card {
+            @apply bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-md transition-shadow duration-300;
+        }
+        
+        .glass-panel {
+            @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+
+    <!-- Global Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 nav-transparent py-4">
+        <div class="container-custom flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img id="nav-logo" src="attachments/d7ff20a7-f353-4b54-8033-29fd8b30d74d/logo.webp" alt="Walnus Global" class="h-8 w-auto brightness-0 invert transition-all duration-300">
+                <span class="font-bold tracking-tight text-lg">WALNUS GLOBAL</span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                <a href="#solutions" class="hover:opacity-70 transition-opacity">Solutions</a>
+                <a href="#smartcoat" class="hover:opacity-70 transition-opacity">SmartCoat</a>
+                <a href="#manufacturing" class="hover:opacity-70 transition-opacity">Manufacturing</a>
+                <a href="#projects" class="hover:opacity-70 transition-opacity">Projects</a>
+                <a href="#about" class="hover:opacity-70 transition-opacity">About</a>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="btn py-2 px-4 bg-white/10 hover:bg-white/20 text-current border border-white/20 rounded-full text-sm backdrop-blur-sm transition-all" id="nav-btn-explore">Explore</a>
+                <a href="#contact" class="btn py-2 px-4 bg-white text-gray-900 hover:bg-gray-100 rounded-full text-sm font-semibold transition-all" id="nav-btn-contact">Talk to Walnus</a>
+            </div>
+            
+            <button class="md:hidden text-current p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="attachments/d7ff20a7-f353-4b54-8033-29fd8b30d74d/638b254dc6645c374fe97559b8cb761e.jpg" alt="Coatings & Construction" class="w-full h-full object-cover object-center opacity-50 scale-105 transform motion-safe:animate-[pulse_20s_ease-in-out_infinite_alternate]" />
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        
+        <div class="container-custom relative z-10 text-center text-white mt-16">
+            <div class="inline-block mb-6 px-4 py-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-md text-sm font-medium tracking-wide uppercase">
+                A new generation of construction
+            </div>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-8 max-w-5xl mx-auto leading-tight">
+                COATINGS.<br/>CONSTRUCTION.<br/>INTELLIGENCE.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto font-medium">
+                Technology-enabled coatings, manufacturing and project intelligence for the built environment.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#ecosystem" class="btn bg-white text-gray-900 hover:bg-gray-100 rounded-full px-8 py-4 text-lg w-full sm:w-auto">Explore Walnus</a>
+                <a href="#contact" class="btn bg-white/10 backdrop-blur-md border border-white/30 text-white hover:bg-white/20 rounded-full px-8 py-4 text-lg w-full sm:w-auto">Talk to Walnus</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Walnus Ecosystem Section -->
+    <section id="ecosystem" class="section-padding bg-gray-50">
+        <div class="container-custom">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-sm font-semibold tracking-wider text-gray-500 uppercase mb-3 block">The Walnus Ecosystem</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 tracking-tight">Simple on the surface.<br/>Intelligent underneath.</h2>
+                <p class="text-lg text-gray-600">An interconnected system of manufacturing, intelligence, and professional execution.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- SmartCoat -->
+                <div class="card group">
+                    <div class="h-12 w-12 bg-gray-900 rounded-lg flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">SmartCoat™</h3>
+                    <p class="text-gray-600 mb-6">Digital coatings intelligence and advanced formulation technology.</p>
+                    <a href="#" class="btn-tertiary flex items-center gap-1 font-semibold text-sm">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+                
+                <!-- SmartView Pro -->
+                <div class="card group">
+                    <div class="h-12 w-12 bg-gray-900 rounded-lg flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l3-9 5 18 3-9h5"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">SmartView Pro™</h3>
+                    <p class="text-gray-600 mb-6">Construction measurement and spatial project intelligence.</p>
+                    <a href="#" class="btn-tertiary flex items-center gap-1 font-semibold text-sm">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+                
+                <!-- Mix Master -->
+                <div class="card group">
+                    <div class="h-12 w-12 bg-gray-900 rounded-lg flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mix Master™</h3>
+                    <p class="text-gray-600 mb-6">Formulation and production intelligence for consistent quality.</p>
+                    <a href="#" class="btn-tertiary flex items-center gap-1 font-semibold text-sm">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+                
+                <!-- Professional Painting -->
+                <div class="card group">
+                    <div class="h-12 w-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6 text-gray-900 group-hover:scale-110 transition-transform border border-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Professional Painting</h3>
+                    <p class="text-gray-600 mb-6">Technology-assisted execution by certified professional teams.</p>
+                </div>
+                
+                <!-- Manufacturing -->
+                <div class="card group">
+                    <div class="h-12 w-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6 text-gray-900 group-hover:scale-110 transition-transform border border-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Manufacturing</h3>
+                    <p class="text-gray-600 mb-6">High-capacity coatings production and reliable material supply.</p>
+                </div>
+                
+                <!-- Project Intelligence -->
+                <div class="card group">
+                    <div class="h-12 w-12 bg-gray-100 rounded-lg flex items-center justify-center mb-6 text-gray-900 group-hover:scale-110 transition-transform border border-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Project Intelligence</h3>
+                    <p class="text-gray-600 mb-6">Data-driven workflows from estimation to final reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SmartView Pro / Intelligence Section -->
+    <section class="section-padding bg-white overflow-hidden">
+        <div class="container-custom">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2">
+                    <span class="text-sm font-semibold tracking-wider text-gray-500 uppercase mb-3 block">SmartView Pro™</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-gray-900">See. Measure.<br/>Understand. Estimate.</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Our computer vision and spatial intelligence tools transform field surveys. Capture building geometry, calculate exact material requirements, and generate precise estimates in minutes.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-gray-900 mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-700">Mobile-first site capture</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-gray-900 mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-700">Automated surface area calculations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-gray-900 mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-gray-700">Instant material cost forecasting</span>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary rounded-full">Explore SmartView Pro</button>
+                </div>
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="absolute -inset-4 bg-gray-100 rounded-[2rem] transform -rotate-3 z-0"></div>
+                    <img src="attachments/d7ff20a7-f353-4b54-8033-29fd8b30d74d/file_000000006c1082438a43ed82a00b59ce.png" alt="SmartView Pro Interface" class="relative z-10 rounded-2xl shadow-xl border border-gray-100 w-full h-auto object-cover" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Construction Intelligence Sequence -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">The Connected Workflow</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">From the initial site visit to final reporting, intelligence connects every step.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2">
+                <!-- Sequence nodes -->
+                <div class="flex flex-col items-center text-center group">
+                    <div class="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center mb-3 group-hover:bg-white group-hover:text-gray-900 transition-colors border border-white/20 font-bold">1</div>
+                    <span class="text-sm font-medium tracking-wide">SITE</span>
+                </div>
+                <div class="hidden md:block flex-1 h-px bg-white/20"></div>
+                
+                <div class="flex flex-col items-center text-center group">
+                    <div class="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center mb-3 group-hover:bg-white group-hover:text-gray-900 transition-colors border border-white/20 font-bold">2</div>
+                    <span class="text-sm font-medium tracking-wide">DATA</span>
+                </div>
+                <div class="hidden md:block flex-1 h-px bg-white/20"></div>
+                
+                <div class="flex flex-col items-center text-center group">
+                    <div class="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center mb-3 group-hover:bg-white group-hover:text-gray-900 transition-colors border border-white/20 font-bold">3</div>
+                    <span class="text-sm font-medium tracking-wide">ESTIMATE</span>
+                </div>
+                <div class="hidden md:block flex-1 h-px bg-white/20"></div>
+                
+                <div class="flex flex-col items-center text-center group">
+                    <div class="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center mb-3 group-hover:bg-white group-hover:text-gray-900 transition-colors border border-white/20 font-bold">4</div>
+                    <span class="text-sm font-medium tracking-wide">FORMULATION</span>
+                </div>
+                <div class="hidden md:block flex-1 h-px bg-white/20"></div>
+                
+                <div class="flex flex-col items-center text-center group">
+                    <div class="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center mb-3 group-hover:bg-white group-hover:text-gray-900 transition-colors border border-white/20 font-bold">5</div>
+                    <span class="text-sm font-medium tracking-wide">PRODUCTION</span>
+                </div>
+                <div class="hidden md:block flex-1 h-px bg-white/20"></div>
+                
+                <div class="flex flex-col items-center text-center group">
+                    <div class="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center mb-3 group-hover:bg-white group-hover:text-gray-900 transition-colors border border-white/20 font-bold">6</div>
+                    <span class="text-sm font-medium tracking-wide">EXECUTION</span>
+                </div>
+                <div class="hidden md:block flex-1 h-px bg-white/20"></div>
+                
+                <div class="flex flex-col items-center text-center group">
+                    <div class="h-12 w-12 rounded-full bg-white/10 flex items-center justify-center mb-3 group-hover:bg-white group-hover:text-gray-900 transition-colors border border-white/20 font-bold">7</div>
+                    <span class="text-sm font-medium tracking-wide">REPORT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Painting / Execution -->
+    <section class="section-padding bg-gray-50">
+        <div class="container-custom">
+            <div class="flex flex-col-reverse lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2">
+                    <img src="attachments/d7ff20a7-f353-4b54-8033-29fd8b30d74d/file_00000000e73481f491fdc0106c1b0c6c.png" alt="Professional Execution" class="rounded-2xl shadow-lg border border-gray-200 w-full h-auto object-cover" />
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <span class="text-sm font-semibold tracking-wider text-gray-500 uppercase mb-3 block">Professional Execution</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-gray-900">Material. Production.<br/>Execution.</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        We connect high-capacity manufacturing with certified professional painters. A single-source accountability model that ensures quality, controls cost, and guarantees reliable supply for major projects.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">Supply Reliability</h4>
+                            <p class="text-sm text-gray-600">Direct from factory to site, eliminating delays.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">Quality Consistency</h4>
+                            <p class="text-sm text-gray-600">Mix Master™ ensures perfect formulation matches.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">Cost Control</h4>
+                            <p class="text-sm text-gray-600">Precise estimating reduces material waste.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-2">Trained Teams</h4>
+                            <p class="text-sm text-gray-600">Certified professionals equipped with the best tools.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-white border-t border-gray-100">
+        <div class="container-custom text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-gray-900">Ready to build?</h2>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">Experience the intersection of coatings manufacturing and construction intelligence.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button class="btn btn-primary rounded-full px-8 py-4 text-lg w-full sm:w-auto">Start a Project</button>
+                <button class="btn btn-secondary rounded-full px-8 py-4 text-lg w-full sm:w-auto">Explore the Technology</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-20 pb-10 border-t border-gray-800">
+        <div class="container-custom">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-16">
+                <div class="lg:col-span-2">
+                    <img src="attachments/d7ff20a7-f353-4b54-8033-29fd8b30d74d/logo.webp" alt="Walnus Global" class="h-8 w-auto brightness-0 invert mb-6">
+                    <p class="text-gray-400 text-sm max-w-sm mb-6">
+                        Walnus Global Ventures is a technology-enabled coatings and construction intelligence company.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-sm tracking-wider uppercase text-gray-500">Solutions</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">SmartCoat™</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">SmartView Pro™</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Manufacturing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Professional Painting</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Project Intelligence</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-sm tracking-wider uppercase text-gray-500">Company</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Insights</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-sm tracking-wider uppercase text-gray-500">Contact</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="mailto:info@walnusglobal.com" class="hover:text-white transition-colors">info@walnusglobal.com</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">+234 123 456 7890</a></li>
+                        <li class="pt-2"><a href="#" class="text-white font-medium hover:underline">Partner with us →</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+                <p>&copy; 2026 Walnus Global Ventures. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Sticky Navigation Handler
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.getElementById('navbar');
+            const logo = document.getElementById('nav-logo');
+            const btnExplore = document.getElementById('nav-btn-explore');
+            const btnContact = document.getElementById('nav-btn-contact');
+            
+            const handleScroll = () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.remove('nav-transparent', 'py-4');
+                    navbar.classList.add('nav-scrolled', 'py-3');
+                    logo.classList.remove('brightness-0', 'invert');
+                    
+                    // Update buttons
+                    btnExplore.classList.remove('bg-white/10', 'border-white/20', 'text-white');
+                    btnExplore.classList.add('bg-gray-100', 'border-transparent', 'text-gray-900', 'hover:bg-gray-200');
+                    
+                    btnContact.classList.remove('bg-white', 'text-gray-900');
+                    btnContact.classList.add('bg-gray-900', 'text-white', 'hover:bg-gray-800');
+                } else {
+                    navbar.classList.add('nav-transparent', 'py-4');
+                    navbar.classList.remove('nav-scrolled', 'py-3');
+                    logo.classList.add('brightness-0', 'invert');
+                    
+                    // Revert buttons
+                    btnExplore.classList.add('bg-white/10', 'border-white/20', 'text-white');
+                    btnExplore.classList.remove('bg-gray-100', 'border-transparent', 'text-gray-900', 'hover:bg-gray-200');
+                    
+                    btnContact.classList.add('bg-white', 'text-gray-900');
+                    btnContact.classList.remove('bg-gray-900', 'text-white', 'hover:bg-gray-800');
+                }
+            };
+            
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Init
+        });
+    </script>
+</body>
+</html>
